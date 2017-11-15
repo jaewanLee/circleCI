@@ -5,7 +5,7 @@
 
 general:
     artifacts:
-        - /home/ubuntu/circleCITest/app/build/outputs/apk/
+        - /home/ubuntu/circleCI/app/build/outputs/apk/
 
 machine:
     environment:
