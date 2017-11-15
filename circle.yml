@@ -10,7 +10,10 @@ general:
 machine:
     environment:
          ANDROID_HOME: /usr/local/android-sdk-linux
-         KEYSTORE: ${HOME}/${CIRCLE_PROJECT_REPONAME}/signing.keystore
+         KEYSTORE: ${HOME}/${CIRCLE_PROJECT_REPONAME}/test_key
+         KEYSTORE_PASSWORD: tlsska100
+         KEY_ALIAS: testKey
+         KEY_PASSWORD: tlsska100
 
 dependencies:
     pre:

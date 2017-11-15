@@ -14,10 +14,11 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file(System.getenv("test_key")?:"keystore.jks")
-            storePassword System.getenv("tkssja199")
-            keyAlias System.getenv("test_key")
-            keyPassword System.getenv("tlsska100")
+            storeFile file(System.getenv("KEYSTORE")?:"test_key")
+            storePassword System.getenv("KEYSTORE_PASSWORD")
+            keyAlias System.getenv("KEY_ALIAS")
+            keyPassword System.getenv("KEY_PASSWORD")
+
         }
     }
     buildTypes {
