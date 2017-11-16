@@ -6,6 +6,9 @@
 general:
     artifacts:
         - /home/ubuntu/circleCI/app/build/outputs/apk/
+    branches:
+        - master
+
 
 machine:
     environment:

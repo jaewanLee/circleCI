@@ -10,8 +10,8 @@ then
     # we're using curl instead of wget because it will not
     # expose the sensitive uri in the build logs:
     curl -L -o ${KEYSTORE} ${KEYSTORE_URI}
-    echo "ls $KEYSTORE"
-    echo "ls ${HOME}/${CIRCLE_PROJECT_REPONAME}/test_key"
+    ls $KEYSTORE
+    ls ${HOME}/${CIRCLE_PROJECT_REPONAME}/test_key
 else
     echo "Keystore uri not set.  .APK artifact will not be signed."
 fi
